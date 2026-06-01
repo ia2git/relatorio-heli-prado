@@ -1794,18 +1794,49 @@
                 <div class="section-header">
                     <div class="section-number">03b</div>
                     <div>
-                        <div class="section-title">Exemplo de Atendimento Real</div>
+                        <div class="section-title">Exemplos de Atendimento Real</div>
                         <div class="section-subtitle">Simulação baseada em comportamento do Agente Heli</div>
                     </div>
                 </div>
-                <div class="chat-sample" style="background: #f8fafc; padding: 24px; border-radius: 16px; max-width: 600px; margin: 0 auto;">
-                    <div class="chat-bubble user" style="background: #e2e8f0; padding: 12px 16px; border-radius: 18px 18px 4px 18px; margin: 8px 0 8px auto; max-width: 80%; text-align: right;">
-                        <div style="font-size: 0.85rem; color: #64748b; margin-bottom: 4px;">👤 Usuário</div>
-                        <div>Olá, gostaria de informações sobre aluguel de salas comerciais no Condomínio Helitower.</div>
+                <div style="display: flex; flex-direction: column; gap: 24px; max-width: 600px; margin: 0 auto;">
+                    
+                    <!-- Cenário 1: Informação Comercial -->
+                    <div class="chat-sample" style="background: #f8fafc; padding: 20px; border-radius: 16px;">
+                        <div style="font-size: 0.85rem; color: #64748b; margin-bottom: 12px; font-weight: 600;">📞 Cenário 1: Informações Comerciais</div>
+                        <div class="chat-bubble user" style="background: #e2e8f0; padding: 12px 16px; border-radius: 18px 18px 4px 18px; margin: 8px 0 8px auto; max-width: 80%; text-align: right;">
+                            <div style="font-size: 0.85rem; color: #64748b; margin-bottom: 4px;">👤 Usuário</div>
+                            <div>Olá, gostaria de informações sobre aluguel de salas comerciais no Condomínio Helitower.</div>
+                        </div>
+                        <div class="chat-bubble ai" style="background: #dbeafe; padding: 12px 16px; border-radius: 18px 18px 18px 4px; margin: 8px auto 8px 0; max-width: 80%;">
+                            <div style="font-size: 0.85rem; color: #1e40af; margin-bottom: 4px;">🤖 Heli</div>
+                            <div>Olá! Para informações sobre locação de salas e lojas comerciais, por favor, entre em contato com nossa equipe comercial: <strong>(71) 99997-6649</strong>. Eles poderão auxiliar com valores, disponibilidade e visitas.</div>
+                        </div>
                     </div>
-                    <div class="chat-bubble ai" style="background: #dbeafe; padding: 12px 16px; border-radius: 18px 18px 18px 4px; margin: 8px auto 8px 0; max-width: 80%;">
-                        <div style="font-size: 0.85rem; color: #1e40af; margin-bottom: 4px;">🤖 Heli</div>
-                        <div>Olá! Para informações sobre locação de salas e lojas comerciais, por favor, entre em contato com nossa equipe comercial: <strong>(71) 99997-6649</strong>. Eles poderão auxiliar com valores, disponibilidade e visitas.</div>
+
+                    <!-- Cenário 2: Transcrição de Áudio -->
+                    <div class="chat-sample" style="background: #f8fafc; padding: 20px; border-radius: 16px;">
+                        <div style="font-size: 0.85rem; color: #64748b; margin-bottom: 12px; font-weight: 600;">🎙️ Cenário 2: Transcrição de Áudio</div>
+                        <div class="chat-bubble user" style="background: #e2e8f0; padding: 12px 16px; border-radius: 18px 18px 4px 18px; margin: 8px 0 8px auto; max-width: 80%; text-align: right;">
+                            <div style="font-size: 0.85rem; color: #64748b; margin-bottom: 4px;">👤 Usuário</div>
+                            <div>🎵 <em>[Mensagem de voz enviada]</em></div>
+                        </div>
+                        <div class="chat-bubble ai" style="background: #dbeafe; padding: 12px 16px; border-radius: 18px 18px 18px 4px; margin: 8px auto 8px 0; max-width: 80%;">
+                            <div style="font-size: 0.85rem; color: #1e40af; margin-bottom: 4px;">🤖 Heli</div>
+                            <div>✅ <strong>Áudio transcrito:</strong> "Olá, gostaria de saber qual o horário de funcionamento da portaria e como faço para agendar uma visita técnica para avaliação da infraestrutura de rede."</div>
+                        </div>
+                    </div>
+
+                    <!-- Cenário 3: Agendamento -->
+                    <div class="chat-sample" style="background: #f8fafc; padding: 20px; border-radius: 16px;">
+                        <div style="font-size: 0.85rem; color: #64748b; margin-bottom: 12px; font-weight: 600;">📅 Cenário 3: Agendamento e Log</div>
+                        <div class="chat-bubble user" style="background: #e2e8f0; padding: 12px 16px; border-radius: 18px 18px 4px 18px; margin: 8px 0 8px auto; max-width: 80%; text-align: right;">
+                            <div style="font-size: 0.85rem; color: #64748b; margin-bottom: 4px;">👤 Usuário</div>
+                            <div>Preciso agendar uma manutenção na sala 1205 para próxima terça-feira.</div>
+                        </div>
+                        <div class="chat-bubble ai" style="background: #dbeafe; padding: 12px 16px; border-radius: 18px 18px 18px 4px; margin: 8px auto 8px 0; max-width: 80%;">
+                            <div style="font-size: 0.85rem; color: #1e40af; margin-bottom: 4px;">🤖 Heli</div>
+                            <div>✅ <strong>Agendamento registrado!</strong> Manutenção na sala 1205 agendada para 03/06/2026. O log foi atualizado no Google Sheets automaticamente com ID #MNT-2026-064.</div>
+                        </div>
                     </div>
                 </div>
             </div>
